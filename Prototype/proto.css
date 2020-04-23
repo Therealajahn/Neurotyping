@@ -1,0 +1,25 @@
+#chart-container{
+    width:550px;
+    height:550px;
+   
+}
+
+.big-boy{
+    width: 100px;
+    height: 100px;
+}
+/* #2d7c3c #2e7a9b #a573bf #c56561*/
+/* #1d6e5f #036cb7 #795ec3 #aa2a26*/
+/* #084551 #1956b9 #b05ab1 #a96632*/
+/* #2c3431 #032456 #5c2b5a #926e28*/
+.small-boy{
+    width: 20px;
+    height: 20px;
+}
+
+#one{
+    background:#2d7c3c;
+}
+
+
+

@@ -1,13 +1,27 @@
 #chart-container{
     width:550px;
     height:550px;
-   
-}
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+ }
 
 .big-boy{
+    display: grid;
     width: 100px;
     height: 100px;
-}
+    grid-template-rows: repeat(4, 20px);
+    grid-template-columns: repeat(4, 20px);
+    gap: 4px;
+    background: black;
+ }
+ 
+ .big-boy{
+    width: 100px;
+    height: 100px;
+    background: black;
+ }
 /* #2d7c3c #2e7a9b #a573bf #c56561*/
 /* #1d6e5f #036cb7 #795ec3 #aa2a26*/
 /* #084551 #1956b9 #b05ab1 #a96632*/
@@ -15,11 +29,74 @@
 .small-boy{
     width: 20px;
     height: 20px;
-}
+    margin-left: 4px;
+    margin-top: 4px;
+ }
 
-#one{
+
+.small-boy.one{
     background:#2d7c3c;
-}
+ }
+
+ .small-boy.two{
+    background:#2e7a9b;
+ }
+ 
+ .small-boy.three{
+    background:#a573bf;
+ }
+
+ .small-boy.four{
+    background:#c56561;
+ }
+
+ .small-boy.five{
+    background:#1d6e5f;
+ }
+ 
+ .small-boy.six{
+    background: #036cb7;
+ }
+
+ .small-boy.seven{
+    background:#795ec3;
+ }
+ 
+ .small-boy.eight{
+    background:#aa2a26;
+ }
+
+ .small-boy.nine{
+    background:#084551;
+ }
+
+ .small-boy.ten{
+    background:#1956b9;
+ }
+
+ .small-boy.eleven{
+    background:#b05ab1;
+ }
+
+ .small-boy.twelve{
+    background:#a96632;
+ }
+
+ .small-boy.thirteen{
+    background:#2c3431;
+ }
+
+ .small-boy.fourteen{
+    background:#032456;
+ }
+
+ .small-boy.fifteen{
+    background:#5c2b5a ;
+ }
+
+ .small-boy.sixteen{
+    background:#926e28;
+ }
 
 
 

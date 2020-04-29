@@ -1,27 +1,26 @@
-let chart = document.getElementById('chart-container');
+let chartContainer = document.getElementById('chart-container');
 
-let num = ['one', 'two', 'three', 'four','five', 'six','seven', 'eight','nine','ten','eleven', 'twelve','thirteen','fourteen','fifteen','sixteen'];
+let colorIndex = -1;
 
-let colorNum = -1;
-let section = [];
+let color = ['one', 'two', 'three', 'four','five', 'six','seven', 'eight','nine','ten','eleven', 'twelve','thirteen','fourteen','fifteen','sixteen'];
+
+let chart = '';
+
 for (let i = 0; i < 256; i++){
+    
     let sixteenDiv = i % 16;
-    // console.log("sixteenDiv:",sixteenDiv);
     
-    if(sixteenDiv === 0){ 
-     colorNum++;
-        // console.log( colorNum" colorNum);
-        section.push(`<section class = "big-boy ${num[colorNum]}">`);
-    }    
-    console.log('colorNum:', colorNum);
-    section.push(`<div class='small-boy ${num[colorNum]}'></div>`)
+    if(sixteenDiv === 0){
+        colorIndex++;
+        console.log("colorIndex",colorIndex);
+        chart += `\n\n<section class = 'big-boy ${color[colorIndex]}'>\n`;
+    }; 
     
-    if(sixteenDiv === 15){   
-    section.push('</section>'); 
-    };
-    
-    // console.log(section);  
+    chart += `\n\t\t<div class='small-boy ${color[colorIndex]}'></div>`;
+
+    if(sixteenDiv === 15){
+        chart += '</section>';
+    }
 }
-
-chart.innerHTML = section.join(' ');
-
+console.log("chart",chart);
+chartContainer.innerHTML = chart;

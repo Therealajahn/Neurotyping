@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
- <html class="no-js"> 
+ <html lang='en' class='no-js'> 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="proto.css">
+        <meta name='description' content='>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='proto.css'>
     </head>
     <body>
        
@@ -30,9 +30,43 @@
                 <div class='small-boy one'></div>
                 <div class='small-boy one'></div>
             </section>  -->
-        </main>   
+        </main>
+        <aside id='add-image'>
+            <form id='add-image-form'>
+                <label for='add-image-input'>Image URL</label>
+                <input type='text' id='add-image-input' name='add-image-input'>
+                <button type='submit'>Add</button>
+            </form>
+            <section id='master-controls'>    
+                <label for='master-size'>Master Size</label>
+                <input type='range' id='master-size' name='master-size'></br>
+                <label for='master-size'>Master Roundness</label>
+                <input type='range' id='master-size' name='master-size'> 
+            </section>     
+            <ul id='image-list'>
+                <li>
+                    <div class='image-container'>
+                        <div class='image-url'>
+                            <label for='add-image-input'>Image URL</label>
+                            <input type='text' id='add-image-input' name='add-image-input'>
+                            <button type='submit'>Add</button></br>
+                        </div>
+                        <div class='image-sliders'>
+                            <label for='image-size'>Size</label>
+                            <input type='range' id='image-size' name='image-size'></br>
+                            <label for='image-size'>Roundness</label>
+                            <input type='range' id='image-size' name='image-size'> 
+                        </div>
+                        
+                        <div class='image'></div> 
+                    </div>
+                </li>
+               
+                
+            </ul>
+        </aside>   
         
         
-        <script src="proto.js" async defer></script>
+        <script src='proto.js' async defer></script>
     </body>
 </html>

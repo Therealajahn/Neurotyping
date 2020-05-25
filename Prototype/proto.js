@@ -27,5 +27,8 @@ console.log("chart",chart);
 chartContainer.innerHTML = chart;
 
 
+console.log(window);
+
+
 
 

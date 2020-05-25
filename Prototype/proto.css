@@ -3,6 +3,7 @@ body{
    grid-template-columns: repeat(3,1fr);
    grid-template-rows: 100vh;
    grid-template-areas: ". chart images";
+   background: black;
 }
 #chart-container{
     grid-area: chart;
